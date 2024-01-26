@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Social Zen: Hide Social Media Likes",
+  "description": "In the fast-paced world of constant online interaction, Social Zen helps you focus on the content that truly matters by removing the distraction of like counts.",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/SocialZenIcon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://www.facebook.com/"]
+    }
+  ]
+}
