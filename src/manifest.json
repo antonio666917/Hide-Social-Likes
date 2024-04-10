@@ -16,7 +16,11 @@
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
-      "matches": ["https://www.facebook.com/"]
+      "matches": [
+        "https://www.facebook.com/",
+        "https://www.instagram.com/",
+        "https://www.threads.net/"
+      ]
     }
   ]
 }
